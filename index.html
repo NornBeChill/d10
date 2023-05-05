@@ -1,0 +1,78 @@
+<html><head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <body>
+    <header class="text-purple-500 text-center text-7xl p-10 border border-b-gray-400 shadow-md">
+    TEXT EDITOR
+    </header>
+    <div class="flex flex-row gap-2 m-5 text-center justify-center">
+        <div class="text-purple-300 border-4 border-purple-500 rounded m-1 text-sm font-semibold px-4 py-3 min-w-96">Bold</div>
+        <div class="text-purple-300 border-4 border-purple-500 rounded m-1 text-sm font-semibold px-4 py-3">Italic</div>
+        <div class="text-purple-300 border-4 border-purple-500 rounded m-1 text-sm font-semibold px-4 py-3">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path>
+            </svg>                  
+            </div>
+            <div class="text-purple-300 border-4 border-purple-500 rounded m-1 text-sm font-semibold px-4 py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"></path>
+                </svg>                                  
+            </div>
+            <div class="text-purple-300 border-4 border-purple-500 rounded m-1 text-sm font-semibold px-4 py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"></path>
+                </svg>                                    
+            </div>
+            <div class="text-purple-300 border-4 border-purple-500 rounded m-1 text-sm font-semibold px-4 py-3">Upper case</div>
+            <div class="text-purple-300 border-4 border-purple-500 rounded m-1 text-sm font-semibold px-4 py-3">Lower case</div>
+            <div class="text-purple-300 border-4 border-purple-500 rounded m-1 text-sm font-semibold px-4 py-3">Capitalize</div>
+            <div class="text-purple-300 border-4 border-purple-500 rounded m-1 text-sm font-semibold px-4 py-3">Clear text</div>
+        </div>
+        <div class="mx-40 my-7 py-5">
+            <textarea id="textbox" name="textbox" rows="10" cols="5" placeholder="Your text here" class="border-4 border-purple-500 p-10 w-full h-96 text-left"></textarea>
+        </div>
+    </body>
+    <script>
+        
+        function f1() {
+            document.getElementById("textarea1").style.fontWeight = "bold";
+        }
+        
+        function f2() {
+            document.getElementById("textarea1").style.fontStyle = "italic";
+        }
+        
+        function f3() {
+            document.getElementById("textarea1").style.textAlign = "left";
+        }
+        
+        function f4() {
+            document.getElementById("textarea1").style.textAlign = "center";
+        }
+        
+        function f5() {
+            document.getElementById("textarea1").style.textAlign = "right";
+        }
+        
+        function f6() {
+            document.getElementById("textarea1").style.textTransform = "uppercase";
+        }
+        
+        function f7() {
+            document.getElementById("textarea1").style.textTransform = "lowercase";
+        }
+        
+        function f8() {
+            document.getElementById("textarea1").style.textTransform = "capitalize";
+        }
+        
+        function f9() {
+            
+            document.getElementById("textarea1").style.fontWeight = "normal";
+            document.getElementById("textarea1").style.textAlign = "left";
+            document.getElementById("textarea1").style.fontStyle = "normal";
+            document.getElementById("textarea1").style.textTransform = "capitalize";
+            document.getElementById("textarea1").value = " ";
+        }
+    </script>
+</html>
